@@ -6,9 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>About | Jarret Yingling</title>
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-  crossorigin="anonymous">
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -16,36 +16,83 @@
 
   <header id="masthead">
     <div class="container">
-      <a href="index.html" id="logo">Jarret Yingling</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+      <div class="row">
+        <a href="index.html" id="logo" class="col-xs-12 col-sm-12 col-md-4 offset-md-1">Jarret Yingling</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light col-xs-12 col-sm-12 col-md-6">
+          <!--
+          <a class="navbar-brand" href="index.html">Navbar</a>
+          -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="index.html">About</a>
+                  <a class="dropdown-item" href="portfolio.html">Portfolio</a>
+                  <a class="dropdown-item" href="contact.html">Contact</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
 
   <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>About Me</h1>
+    <div class="row">
+      <section class="main-section col-xs-12 col-sm-12 col-md-10 offset-md-1">
+        <h1>About Me</h1>
 
-      <img src="assets/images/jarretyingling.jpg" class="auth-image" alt="Jarret Yingling">
+        <img src="assets/images/jarretyingling.jpg" class="auth-image" alt="Jarret Yingling">
 
-      <p>Hi, my name is Jarret Yingling. I live in Midtown, Atlanta, GA where I am VP of Capital Markets Trading and Data Analytics for SunTrust Bank's Corporate Treasury. I am currently enrolled in GA Tech's Coding Bootcamp for Full Stack Web Development.</p>
+        <p>Hi, my name is Jarret Yingling. I live in Midtown, Atlanta, GA where I am VP of Capital Markets Trading and
+          Data Analytics for SunTrust Bank's Corporate Treasury. I am currently enrolled in GA Tech's Coding Bootcamp
+          for
+          Full Stack Web Development.</p>
 
-      <p>I hope to leverage full stack web development with my knowledge of capital markets trading in Atlanta's burgeoning fintech industry. Capital markets, banking and finance in general are rapidly changing with technological advances on mulitple fronts and I hope to play an active role in this innovation.</p>
+        <p>I hope to leverage full stack web development with my knowledge of capital markets trading in Atlanta's
+          burgeoning fintech industry. Capital markets, banking and finance in general are rapidly changing with
+          technological advances on mulitple fronts and I hope to play an active role in this innovation.</p>
 
-      <p>I moved to Atlanta several years ago but grew up in central Pennsylvania. I have a voracious appetite for knowledge and enjoy challenging myself to try new things that I've never done before. I'm a self-taught guitar player of 20 years and have recently begun exploring the world of open ocean sailing.</p>
+        <p>I moved to Atlanta several years ago but grew up in central Pennsylvania. I have a voracious appetite for
+          knowledge and enjoy challenging myself to try new things that I've never done before. I'm a self-taught
+          guitar
+          player of 20 years and have recently begun exploring the world of open ocean sailing.</p>
 
-    </section>
-
+      </section>
+    </div>
   </div>
 
   <footer>
     <div class="container">
-      Copyright &copy; 
+      Copyright &copy;
     </div>
   </footer>
+
+  <!-- links to bootstrap javascript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
